@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bar {
+        border: 2px solid blue;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+      }
+
+      canvas {
+        width: 100vw;
+        height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="bar"></div>
+      <canvas id="cnv" width="450" height="450" alt="A canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
