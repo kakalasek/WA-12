@@ -4,7 +4,7 @@ let coord = { x: 0, y: 0 };
 
 function draw() {
   ctx.beginPath();
-  ctx.lineWidth = 5;
+  ctx.lineWidth = document.getElementById("stroke-width").value;
   ctx.lineCap = "round";
   ctx.strokeStyle = "#ACD3ED";
   ctx.moveTo(coord.x, coord.y);
