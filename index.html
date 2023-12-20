@@ -21,22 +21,48 @@
         height: 10vh;
         padding: 15px;
         display: flex;
+        align-items: center;
+        justify-content: space-around;
       }
 
       canvas {
-        width: 1300px;
-        height: 600px;
         border: 1px solid black;
+        display: block;
+        width: 100vw;
+        height: 90vh;
+      }
+
+      .stroke-label {
+        font-size: larger;
+        margin-left: 3px;
+      }
+
+      .color-type-label {
+        font-size: larger;
+        margin-left: 3px;
       }
     </style>
   </head>
   <body>
     <div class="box">
       <div class="bar">
-        <input id="stroke-width" type="number" />
-        <label for="stroke-width">stroke-width</label>
+        <div class="stroke">
+          <input id="stroke-width" type="number" />
+          <label for="stroke-width" class="stroke-label">stroke-width</label>
+        </div>
+        <div class="color">
+          <input type="color" id="color-type" />
+          <label for="color-type" class="color-type-label">Color</label>
+        </div>
+        <div class="clear">
+          <button id="clear-all">Clear All</button>
+        </div>
+        <div class="img">
+          <input type="text" id="img-url" />
+          <button id="img-url-button">Import</button>
+        </div>
       </div>
-      <canvas id="cnv" width="1300" height="600" alt="A canvas"></canvas>
+      <canvas id="cnv" alt="A canvas"></canvas>
     </div>
 
     <script src="script.js"></script>
